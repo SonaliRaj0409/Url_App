@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  longurl: MyString
+  shorturl: MyString
+  number_of_hits: 1
+
+two:
+  longurl: MyString
+  shorturl: MyString
+  number_of_hits: 1
