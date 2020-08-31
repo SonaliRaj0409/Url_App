@@ -4,7 +4,7 @@ module GetShortUrl
 
   module ClassMethods
     def generate_short_url
-      short_url = 'minulr.herokuapp.com'    #the static part of the shorturl which is pointed to our application
+      short_url = 'short.com'    #the static part of the shorturl which is pointed to our application
       chars = ['0'..'9', 'A'..'Z', 'a'..'z'].map { |range| range.to_a }.flatten #creates map of 62 chars
       short_url = short_url + '/' + 5.times.map { chars.sample }.join #choose 6 characters randomly and join them which have 62^6 possibilities
       return short_url
