@@ -1,0 +1,16 @@
+<div class="col-md-12" >
+  <b>Analytics</b>
+</div>
+<br>
+<br>
+<div class="col-md-12" >
+  <%  @all_urls.each_with_index { |url |    %>
+    <b><%= url.long_url %></b><br>
+    <%= url.short_url %><br>
+    Total Clicks: <%= url.number_of_hits %><br>
+    Top Countries:
+    <hr>
+  <%
+    }
+  %>
+</div>
