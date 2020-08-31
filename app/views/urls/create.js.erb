@@ -1,0 +1,2 @@
+$("#default_url_list").remove();
+$('#ajax_url_list').html("<%= j (render 'urls/list', all_urls: ShortUrl.all) %>");

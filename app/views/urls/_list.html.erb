@@ -1,0 +1,21 @@
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<div class="container">
+	<h3>Trending URL's</h3>
+	<table class="table table-bordered table-striped">
+		<tr>
+			<th>#</th>
+			<th>Short URL</th>
+			<th>Original URL</th>
+		</tr>
+		<% all_urls.order(number_of_hits: :desc).each_with_index do |url, index|%>
+			<tr>
+				<td><%= index + 1 %></td>
+				<td><%= link_to "#{url.short_url}", url.long_url, target: "_blank" %></td>
+				<td><%= url.long_url %></td>
+			</tr>
+		<% end %>
+	</table>
+</div>
